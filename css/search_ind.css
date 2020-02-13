@@ -1,0 +1,60 @@
+body{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: raleway;
+    text-align: center;
+    font-size: 14px;
+}
+
+h1{
+    font-size: 38px;
+    color: #c93172;
+}
+
+.wrap{
+    width: 500px;
+    margin: auto;
+}
+
+form fieldset{
+    position: relative;
+    border:none;
+}
+
+form input[type="text"]{
+    padding: 10px;
+    width: 100%;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+#voice-trigger{
+    position: absolute;
+    right: 0;
+    top: 14px;
+    padding-right: 10px
+}
+
+#voice-trigger svg{
+    fill: #626262;
+}
+
+#voice-trigger.active svg{
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0% {
+        -webkit-transform: scale(1.0, 1.0); fill: 1.0;
+    }
+    50% {
+        -webkit-transform: scale(1.0,1.0); opacity: 0.5;
+    }
+    100% {
+        -webkit-transform: scale(1.0, 1.0); opacity: 1.0;
+    }
+}
+
+
+
